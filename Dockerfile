@@ -8,7 +8,7 @@ LABEL maintainer="nftalemarega080@gmail.com"
 WORKDIR /app
 
 # Copy the jar file into the container
-ARG JAR_FILE=./*.jar
+ARG JAR_FILE=target/*.jar
 
 # Copy the jar file
 COPY ${JAR_FILE} app.jar
