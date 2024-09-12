@@ -1,4 +1,4 @@
-package com.bank.learn;
+package com.bank.cobank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

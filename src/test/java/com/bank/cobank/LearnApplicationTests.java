@@ -1,10 +1,10 @@
-package com.bank.learn;
+package com.bank.cobank;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LearnApplicationTests {
+class cobankApplicationTests {
 
 	@Test
 	void contextLoads() {

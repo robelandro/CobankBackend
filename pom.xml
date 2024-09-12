@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bank</groupId>
-	<artifactId>learn</artifactId>
+	<artifactId>cobank</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>learn</name>
+	<name>cobank</name>
 	<description>Building API</description>
 	<url/>
 	<licenses>

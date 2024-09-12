@@ -1,4 +1,4 @@
-package com.bank.learn.model.user;
+package com.bank.cobank.model.user;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

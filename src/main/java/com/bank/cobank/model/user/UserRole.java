@@ -1,4 +1,4 @@
-package com.bank.learn.model.user;
+package com.bank.cobank.model.user;
 
 public enum UserRole {
     ADMIN,

@@ -1,10 +1,11 @@
-package com.bank.learn.config;
+package com.bank.cobank.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 @Configuration
 @EnableWebSecurity
@@ -16,7 +17,9 @@ public class SecurityConfig {
       .authorizeHttpRequests(authorize -> authorize
         .anyRequest().permitAll() // Allow all requests without authentication
       )
-      .csrf(csrf -> csrf.disable()); // Disable CSRF protection for simplicity
+      .csrf(csrf -> csrf // Enable CSRF protection
+        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()) // Store CSRF token in a cookie
+      );
 
     return http.build();
   }

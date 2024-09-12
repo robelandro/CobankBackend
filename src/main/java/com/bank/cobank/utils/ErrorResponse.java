@@ -1,4 +1,4 @@
-package com.bank.learn.utils;
+package com.bank.cobank.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
